@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobremim">Sobre mim</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
+
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div> <input type="checkbox" id="theme-switch" class="theme-switch">
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-sun" id="sun-icon"></i>
+            <i class="fas fa-moon" id="moon-icon"></i>
+        </button>
+    </header>
+
+
+    <section id="inicio">
+        <div id="area-inicio">
+            <div id="area-foto">
+                <div id="foto" class="neon-img"></div>
+            </div>
+            <div id="escrito-inicio">
+                <h1 id="bounce">OI! EU SOU O
+                    RAFAEL
+                    FURTADO
+
+                    <div id="fade-text">
+                        <p>Desenvolvedor Full Stack</p>
+                    </div>
+                </h1>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremim">
+        <div id="area-sobremim" class="glow-on-hover">
+            <h1>SOBRE MIM</h1>
+            <p>Olá, sou o Rafael Furtado, tenho 17 anos e estou cursando o 2º ano
+                Tenho grande interesse na área de tecnologia, especialmente em
+                desenvolvimento de sistemas e programação. Estou sempre
+                buscando aprender mais sobre como melhorar a performance de aplicações,<br>
+                criar interfaces modernas, responsivas e de fácil usabilidade. Atualmente, tenho contato com HTML, CSS,
+                JavaScript e estou ampliando meus conhecimentos para outras linguagens e frameworks. Também
+                me interesso bastante por carros, que é uma das minhas paixões pessoais.</p>
+        </div>
+
+    </section>
+
+    <section id="Habilidades">
+        <h1>Habilidades</h1>
+        <div id="area-habilidade">
+            <div class="quadrado-habilidade">
+                <div id="area-img">
+                    <img src="html.png" alt="">
+                </div>
+                <h2>HTML</h2>
+            </div>
+            <div class="quadrado-habilidade">
+                <div id="area-img">
+                    <img src="css.png" alt="">
+                </div>
+                <h2>CSS</h2>
+            </div>
+            <div class="quadrado-habilidade">
+                <div id="area-img">
+                    <img src="javascript.png" alt="">
+                </div>
+                <h2>JavaScript</h2>
+            </div>
+            <div class="quadrado-habilidade">
+                <div id="area-img">
+                    <img src="C.png" alt="">
+                </div>
+                <h2>C#</h2>
+            </div>
+            <div class="quadrado-habilidade">
+                <div id="area-img">
+                    <img src="Mysql.png" alt="">
+                </div>
+                <h2>My Sql</h2>
+            </div>
+            <div class="quadrado-habilidade">
+                <div id="area-img">
+                    <img src="Figma.png" alt="">
+                </div>
+                <h2>Figma</h2>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="projetos">
+        <h2>PROJETOS</h2>
+        <div class="area-projeto">
+            <div class="projeto">
+                <img src="ecommerce.png" class="projeto-img">
+                <h3>Site e-commerce</h3>
+                <p>HTML CSS</p>
+                <a href="https://rafaelfurtadom.github.io/E-commerce/" class="ver-btn">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <img src="bitmap.png" class="projeto-img">
+                <h3>Bitmap Photography</h3>
+                <p>HTML CSS</p>
+                <a href="https://rafaelfurtadom.github.io/sitebitmapp/" class="ver-btn">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <img src="tulen.png" class="projeto-img">
+                <h3>Tulen Photography</h3>
+                <p>HTML CSS</p>
+                <a href="https://rafaelfurtadom.github.io/TULEN-RAFAEL-FURTADO/" class="ver-btn">Ver projeto</a>
+            </div>
+            <div class="projeto">
+                <img src="belara.png" class="projeto-img">
+                <h3>Belara Architecture</h3>
+                <p>HTML CSS</p>
+                <a href="https://rafaelfurtadom.github.io/Belara_Rafael_Furtado/" class="ver-btn">Ver projeto</a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="contato">
+        <h2>CONTATO</h2>
+        <div class="area-form">
+            <form action="">
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+                <input type="button" type="submit" id="botao" value="Enviar">
+            </form>
+            <div class="icons">
+                <a href="tel:+55 31 9755-1610"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://github.com/RafaelFurtadoM" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rafaelfurtado" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <dialog id="success-dialog">
+        <div class="dialog-content">
+            <h2>Envio Realizado!</h2>
+            <p>Obrigado por entrar em contato. Sua mensagem foi enviada com sucesso.</p>
+            <button id="botaofechar">Fechar</button>
+        </div>
+    </dialog>
+    <footer id="footer">
+        <p>Rafael Furtado</p>
+        <div class="social-icons">
+            <a href="https://github.com/RafaelFurtadoM" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rafaelfurtado" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="tel:+55 31 9755-1610" target="_blank">
+                <i class="fas fa-phone-alt"></i></a>
+
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
